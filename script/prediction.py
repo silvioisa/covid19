@@ -74,7 +74,7 @@ deaths['Country/Region'] = deaths['Country/Region'].replace('Korea, South', 'Sou
 countries = cases.iloc[:,1].unique()
 countries.sort()
 
-demo = pd.read_csv("/kaggle/input/world-population-demographics-by-age-2019/world_demographics.csv")
+demo = pd.read_csv("server/data/world_demographics.csv")
 
 demo["Country or Area"] = demo["Country or Area"].replace("Viet Nam", "Vietnam")
 demo["Country or Area"] = demo["Country or Area"].replace("United States of America", "US")
